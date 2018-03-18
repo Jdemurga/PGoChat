@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "389697595596",
+    "firebase_url": "https://pokemongochat-d4fba.firebaseio.com",
+    "project_id": "pokemongochat-d4fba",
+    "storage_bucket": "pokemongochat-d4fba.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:389697595596:android:522656eb6939db54",
+        "android_client_info": {
+          "package_name": "com.gochat.jdemu.pgochat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "389697595596-ef27e9ern2ajfp1t6et3pnnnvjif8bkg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCAF2ZwmwYGi1mjVVXf6DXqzb0VpMg99Ow"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
