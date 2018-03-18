@@ -94,19 +94,20 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    public void logearFirebase(final String correo, String contra) {
-        String borrar = "DELETE FROM personal";
-        basedatos.execSQL(borrar);
-        String query = "INSERT INTO personal (correo,contra)VALUES('" + correo + "','" + contra + "');";
-        basedatos.execSQL(query);
+    public void logearFirebase(final String correo, final String contra) {
         fauth.signInWithEmailAndPassword(correo, contra).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
                 if (task.isSuccessful()) {
+                    String borrar = "DELETE FROM personal";
+                    basedatos.execSQL(borrar);
+                    String query = "INSERT INTO personal (correo,contra)VALUES('" + correo + "','" + contra + "');";
+                    basedatos.execSQL(query);
                     Toast.makeText(getApplicationContext(), "Bienvenido" + correo, Toast.LENGTH_SHORT).show();
                     entra();
                 } else {
-                    pLogin();
+                    Toast.makeText(getApplicationContext(), "Compruebe los campos", Toast.LENGTH_SHORT).show();
+
                 }
             }
         });
